@@ -1,0 +1,48 @@
+.container{
+    position: relative;
+    /* border: 2px solid red; */
+    width: 400px;
+    
+}
+.car{
+    position: relative;
+    animation: go 10s 1s infinite linear;
+}
+
+/* .car{
+    border: 2px solid royalblue;
+} */
+.wh1{
+    position: absolute;
+    /* border: 2px solid green; */
+    /* border-radius: 90%; */
+    top: 87px;left: 36px;z-index: -1;
+    animation: rotate infinite 2s linear;
+}
+
+.wh2{
+    position: absolute;
+    /* border: 2px solid green; */
+    /* border-radius: 90%; */
+    top: 87px;left: 282px;z-index: -1;
+    /* transform: rotate(); */
+    animation: rotate infinite 2s linear;
+}
+
+@keyframes go{
+    from{
+       margin-left: 0; 
+    }
+    to{
+        margin-left: 500px;
+    }
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
